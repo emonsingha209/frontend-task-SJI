@@ -1,6 +1,7 @@
 :root {
   --primary: #19191b;
   --secondary: #fff;
+  --btn-primary: #ff5151;
 }
 * {
   margin: 0;
@@ -51,22 +52,20 @@ body {
   color: var(--secondary);
   text-decoration: none;
 }
+.navbar a.active {
+  color: #ff5151;
+}
 .btn {
   color: var(--secondary);
   text-decoration: none;
   border-radius: 4px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21.82px;
-  letter-spacing: -0.5px;
+  display: grid;
+  place-items: center;
 }
 .header .contact-btn {
   width: 150px;
   height: 44px;
   border: 1px solid var(--secondary);
-  color: var(--secondary);
-  text-decoration: none;
-  border-radius: 4px;
   font-size: 16px;
   font-weight: 400;
   line-height: 21.82px;
@@ -78,12 +77,15 @@ body {
   align-items: center;
   height: calc(100vh - 80px);
   max-height: 700px;
+  margin-bottom: 100px;
 }
 .hero .hero-content {
   position: relative;
   z-index: 1;
-
   width: 536px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .hero .hero-content h1 {
   font-family: Rubik;
@@ -108,7 +110,6 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-
   z-index: 0;
 }
 @media (max-height: 700px) {
@@ -116,8 +117,174 @@ body {
     top: 0;
     transform: translateY(0%);
   }
+  .hero .hero-content {
+    gap: 16px;
+  }
+  .hero {
+    margin-bottom: 240px;
+  }
 }
 .hero .hero-image-container img {
   max-width: 100%;
   height: auto;
+}
+
+.hero-image-container .corner-effect {
+  position: absolute;
+}
+
+.hero-image-container .bg-graphics-1 {
+  top: 100px;
+  left: 100px;
+}
+
+.hero-image-container .bg-graphics-2 {
+  top: 70px;
+  right: 40px;
+}
+
+.hero-image-container .bg-graphics-3 {
+  bottom: 100px;
+  left: 50px;
+}
+
+.hero-image-container .bg-graphics-4 {
+  bottom: 120px;
+  right: 30px;
+}
+.hero .service-btn {
+  width: 204px;
+  height: 58px;
+  background-color: var(--btn-primary);
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27.28px;
+  text-align: left;
+}
+.hero .service-btn .service-btn-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero .service-btn .service-btn-content img {
+  width: 24px;
+  height: 24px;
+}
+.services {
+  display: block;
+  position: relative;
+  margin-bottom: 100px;
+}
+.services .services-title-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.services .services-title-container .services-bg-effect {
+  position: absolute;
+}
+
+.services .services-title-container .bg-graphics-5 {
+  top: -100px;
+  left: 100px;
+}
+
+.services .services-title-container .bg-graphics-6 {
+  bottom: 0;
+  right: 50px;
+}
+
+.services .services-title {
+  width: 695px;
+  font-family: Rubik;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+}
+.services .service-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.service-card {
+  padding: 50px 42px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.service-card .card-ellipse {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  background-color: #ff5151;
+  transition: all 0.5s ease;
+  opacity: 0;
+  border: 2px solid #201d1c;
+}
+
+.service-card:hover {
+  border: 1px solid #6d6665;
+}
+.service-card:hover .card-ellipse {
+  opacity: 1;
+}
+
+.service-card .service-card-icon {
+  margin: 0 auto;
+}
+
+.service-card .service-card-icon img {
+  width: 69px;
+  height: 69px;
+  border-radius: 50%;
+}
+.service-card-content {
+  margin-top: 16px;
+  font-family: Nunito Sans;
+}
+.service-card-content h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38.19px;
+  letter-spacing: -0.75px;
+  text-align: center;
+}
+.service-card-content p {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffffb2;
+}
+.services-card-bg-effect {
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+  rotate: -30deg;
+}
+.portfolio-title {
+  font-family: Rubik;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 68.73px;
+  text-align: left;
 }
