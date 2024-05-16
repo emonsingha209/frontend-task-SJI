@@ -1,0 +1,123 @@
+:root {
+  --primary: #19191b;
+  --secondary: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header a {
+  display: grid;
+  place-items: center;
+}
+.logo {
+  width: 132px;
+  height: 40px;
+}
+.header {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid transparent;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  height: 44px;
+}
+.navbar li {
+  height: 100%;
+}
+.navbar a {
+  font-size: 18px;
+  font-weight: 600;
+  height: 100%;
+  line-height: 24.55px;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.btn {
+  color: var(--secondary);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  letter-spacing: -0.5px;
+}
+.header .contact-btn {
+  width: 150px;
+  height: 44px;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  letter-spacing: -0.5px;
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+  max-height: 700px;
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+
+  width: 536px;
+}
+.hero .hero-content h1 {
+  font-family: Rubik;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 84px;
+  text-align: left;
+}
+.hero .hero-content h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: -0.6565263867378235px;
+  text-align: left;
+  color: #ffffffb2;
+}
+
+.hero .hero-image-container {
+  width: 740px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 0;
+}
+@media (max-height: 700px) {
+  .hero .hero-image-container {
+    top: 0;
+    transform: translateY(0%);
+  }
+}
+.hero .hero-image-container img {
+  max-width: 100%;
+  height: auto;
+}
