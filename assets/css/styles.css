@@ -414,6 +414,7 @@ img {
 .testimonial {
   display: block;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 .testimonial-title {
   display: flex;
@@ -767,7 +768,7 @@ section {
     overflow: hidden;
   }
   .portfolio-title h3,
-  .services .services-title {
+  .services .services-title, .testimonial-title h3  {
     font-family: Rubik;
     font-size: 36px;
     font-weight: 700;
@@ -878,7 +879,7 @@ section {
     top: 40px;
     right: 20px;
   }
-  .service-card-content h3 {
+  .service-card-content h3{
     font-family: Nunito Sans;
     font-size: 24px;
     font-weight: 600;
@@ -925,6 +926,25 @@ section {
   }
   .footer-bottom {
     display: block;
+  }
+  .testimonial-card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: hidden;
+  }
+  .testimonial-card-holder {
+    flex: 0 0 calc(100% - 50px);
+  }
+  .testimonial-card-holder:first-child {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .chevron {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @keyframes pulse {
