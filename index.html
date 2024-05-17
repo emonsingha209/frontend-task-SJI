@@ -18,60 +18,78 @@
     <script src="assets/js/main.js"></script>
   </head>
   <body>
-    <header class="container header">
-      <div class="logo">
-        <a href="index.html"><img src="assets/SVG/Logo.svg" alt="Logo" /></a>
+    <header class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="index.html"><img src="assets/SVG/Logo.svg" alt="Logo" /></a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Projects</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
+        <a href="#contact" class="contact-btn btn">Contact Us</a>
+        <div class="close-icon">
+          <img src="assets/SVG/Close icon.svg" alt="Close Icon" />
+        </div>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Our Projects</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
-      </nav>
-      <a href="#contact" class="contact-btn btn">Contact Us</a>
+      <div class="mobile-header">
+        <div class="logo">
+          <a href="index.html"><img src="assets/SVG/Logo.svg" alt="Logo" /></a>
+        </div>
+        <div class="menu-icon">
+          <img src="assets/SVG/Menu icon.svg" alt="Menu" />
+        </div>
+      </div>
     </header>
     <main>
-      <section class="container hero">
-        <div class="hero-content">
-          <h1>Build Your Awesome Website</h1>
-          <h2>
-            Opec studio is a digital studio that offers several services such as
-            UI/UX Design to developers, we will provide the best service for
-            those of you who use our services.
-          </h2>
-          <a href="#" class="btn service-btn"
-            ><span class="service-btn-content">
-              Our Services
-              <img
-                src="assets/SVG/arrow-right-up.svg"
-                alt="arrow-right-up"
-              /> </span
-          ></a>
+      <section>
+        <div class="bg-effect-portfolio">
+          <img src="assets/SVG/BG effect 2.svg" alt="Bg effet" />
         </div>
-        <div class="hero-image-container">
-          <img
-            src="assets/SVG/Bg-graphics-1.svg"
-            alt="Bg-graphics-1"
-            class="bg-graphics-1 corner-effect"
-          />
-          <img
-            src="assets/SVG/Bg-graphics-2.svg"
-            alt="Bg-graphics-2"
-            class="bg-graphics-2 corner-effect"
-          />
-          <img
-            src="assets/SVG/Bg-graphics-3.svg"
-            alt="Bg-graphics-3"
-            class="bg-graphics-3 corner-effect"
-          />
-          <img
-            src="assets/SVG/Bg-graphics-4.svg"
-            alt="Bg-graphics-4"
-            class="bg-graphics-4 corner-effect"
-          />
-          <img src="assets/PNG/Girl-image.png" alt="Hero Image" />
+        <div class="container hero">
+          <div class="hero-content">
+            <h1>Build Your Awesome Website</h1>
+            <h2>
+              Opec studio is a digital studio that offers several services such
+              as UI/UX Design to developers, we will provide the best service
+              for those of you who use our services.
+            </h2>
+            <a href="#" class="btn service-btn"
+              ><span class="service-btn-content">
+                Our Services
+                <img
+                  src="assets/SVG/arrow-right-up.svg"
+                  alt="arrow-right-up"
+                /> </span
+            ></a>
+          </div>
+          <div class="hero-image-container">
+            <img
+              src="assets/SVG/Bg-graphics-1.svg"
+              alt="Bg-graphics-1"
+              class="bg-graphics-1 corner-effect"
+            />
+            <img
+              src="assets/SVG/Bg-graphics-2.svg"
+              alt="Bg-graphics-2"
+              class="bg-graphics-2 corner-effect"
+            />
+            <img
+              src="assets/SVG/Bg-graphics-3.svg"
+              alt="Bg-graphics-3"
+              class="bg-graphics-3 corner-effect"
+            />
+            <img
+              src="assets/SVG/Bg-graphics-4.svg"
+              alt="Bg-graphics-4"
+              class="bg-graphics-4 corner-effect"
+            />
+            <img src="assets/PNG/Girl-image.png" alt="Hero Image" />
+          </div>
         </div>
       </section>
       <section class="container services">
@@ -126,106 +144,230 @@
           </div>
         </div>
       </section>
-      <section class="container portfolio">
-        <div class="portfolio-title"><h3>Our Awesome Portofolio</h3></div>
-        <div class="tab-buttons">
-          <button class="tab-button active" data-target="all">All</button>
-          <button class="tab-button" data-target="websites">Websites</button>
-          <button class="tab-button" data-target="apps">Apps</button>
-          <button class="tab-button" data-target="newsletters">
-            Newsletters
-          </button>
+      <section>
+        <div class="container portfolio">
+          <div class="portfolio-title"><h3>Our Awesome Portofolio</h3></div>
+          <div class="tab-buttons">
+            <button class="tab-button active" data-target="all">All</button>
+            <button class="tab-button" data-target="websites">Websites</button>
+            <button class="tab-button" data-target="apps">Apps</button>
+            <button class="tab-button" data-target="newsletters">
+              Newsletters
+            </button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="all">
+              <div class="tab-pane-item">
+                <img
+                  src="assets/PNG/Portfolio image 1.png"
+                  alt="ConceptZilla"
+                />
+                <div class="tab-card-content">
+                  <h3>ConceptZilla</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <a href="#" class="btn tab-card-btn">View more</a>
+                </div>
+              </div>
+              <div class="tab-pane-item">
+                <div class="tab-card-container">
+                  <div class="tab-card">
+                    <div class="tab-card-item">
+                      <h3>Videopad</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                    <div class="tab-card-item">
+                      <img
+                        src="assets/PNG/Portfolio image 2.png"
+                        alt="Videopad"
+                      />
+                    </div>
+                  </div>
+                  <div class="tab-card">
+                    <div class="tab-card-item">
+                      <h3>Panto</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                    <div class="tab-card-item">
+                      <img src="assets/PNG/Portfolio image 3.png" alt="Panto" />
+                    </div>
+                  </div>
+                  <div class="tab-card">
+                    <div class="tab-card-item">
+                      <h3>DigiTeck</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                    <div class="tab-card-item">
+                      <img
+                        src="assets/PNG/Portfolio image 4.png"
+                        alt="DigiTeck"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="websites">
+              <div class="tab-pane-item">
+                <div class="tab-card">
+                  <div class="tab-card-item">
+                    <h3>Panto</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="tab-card-item">
+                    <img src="assets/PNG/Portfolio image 3.png" alt="Panto" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="apps">
+              <div class="tab-pane-item">
+                <div class="tab-card">
+                  <div class="tab-card-item">
+                    <h3>Videopad</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="tab-card-item">
+                    <img
+                      src="assets/PNG/Portfolio image 2.png"
+                      alt="Videopad"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="newsletters">
+              <div class="tab-pane-item">
+                <div class="tab-card">
+                  <div class="tab-card-item">
+                    <h3>DigiTeck</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                  <div class="tab-card-item">
+                    <img
+                      src="assets/PNG/Portfolio image 4.png"
+                      alt="DigiTeck"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tab-content">
-          <div class="tab-pane active" id="all">
-            <div class="tab-pane-item">
-              <img src="assets/PNG/Portfolio image 1.png" alt="ConceptZilla" />
-              <div class="tab-card-content">
-                <h3>ConceptZilla</h3>
+        <div class="bg-effect-portfolio">
+          <img src="assets/SVG/BG effect 2.svg" alt="Bg effet" />
+        </div>
+      </section>
+      <section>
+        <div class="container testimonial">
+          <div class="testimonial-title">
+            <h3>What Our Client Says</h3>
+            <div class="chevron">
+              <div class="chevron-container">
+                <span class="chevron-left">&lt;</span>
+              </div>
+              <div class="chevron-container">
+                <span class="chevron-right">&gt;</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card-container">
+            <div class="testimonial-card-holder">
+              <div class="testimonial-card-img">
+                <img src="assets/PNG/Testimonial image.png" alt="Testimonial" />
+              </div>
+              <div class="testimonial-card">
+                <h3>Great Design!</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <a href="#" class="btn tab-card-btn">View more</a>
-              </div>
-            </div>
-            <div class="tab-pane-item">
-              <div class="tab-card">
-                <div class="tab-card-item">
-                  <h3>Videopad</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+                <div class="stars">
+                  <ul>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                  </ul>
                 </div>
-                <div class="tab-card-item">
-                  <img src="assets/PNG/Portfolio image 2.png" alt="Videopad" />
-                </div>
-              </div>
-              <div class="tab-card">
-                <div class="tab-card-item">
-                  <h3>Panto</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-                <div class="tab-card-item">
-                  <img src="assets/PNG/Portfolio image 3.png" alt="Panto" />
-                </div>
-              </div>
-              <div class="tab-card">
-                <div class="tab-card-item">
-                  <h3>DigiTeck</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-                <div class="tab-card-item">
-                  <img src="assets/PNG/Portfolio image 4.png" alt="DigiTeck" />
+                <div class="testimonial-personel">
+                  <div class="testimonial-avatar">
+                    <img src="assets/PNG/Profile 1.png" alt="avatar 1" />
+                  </div>
+                  <div class="testimonial-personel-content">
+                    <h3>Foster Richmond</h3>
+                    <p>Product Manager DigiTeck</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane" id="websites">
-            <div class="tab-pane-item">
-              <div class="tab-card">
-                <div class="tab-card-item">
-                  <h3>Panto</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+            <div class="testimonial-card-holder">
+              <div class="testimonial-card">
+                <h3>Great Design!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="stars">
+                  <ul>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                  </ul>
                 </div>
-                <div class="tab-card-item">
-                  <img src="assets/PNG/Portfolio image 3.png" alt="Panto" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane" id="apps">
-            <div class="tab-pane-item">
-              <div class="tab-card">
-                <div class="tab-card-item">
-                  <h3>Videopad</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-                <div class="tab-card-item">
-                  <img src="assets/PNG/Portfolio image 2.png" alt="Videopad" />
+                <div class="testimonial-personel">
+                  <div class="testimonial-avatar">
+                    <img src="assets/PNG/Profile 2.png" alt="avatar 2" />
+                  </div>
+                  <div class="testimonial-personel-content">
+                    <h3>Eliza Ryan</h3>
+                    <p>Product Manager Panto</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane" id="newsletters">
-            <div class="tab-pane-item">
-              <div class="tab-card">
-                <div class="tab-card-item">
-                  <h3>DigiTeck</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
+            <div class="testimonial-card-holder">
+              <div class="testimonial-card">
+                <h3>Great Design!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="stars">
+                  <ul>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                    <li><img src="assets/SVG/Star.svg" alt="stars" /></li>
+                  </ul>
                 </div>
-                <div class="tab-card-item">
-                  <img src="assets/PNG/Portfolio image 4.png" alt="DigiTeck" />
+                <div class="testimonial-personel">
+                  <div class="testimonial-avatar">
+                    <img src="assets/PNG/Profile 3.png" alt="avatar 3" />
+                  </div>
+                  <div class="testimonial-personel-content">
+                    <h3>Gary Stanton</h3>
+                    <p>Product Manager Panto</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -280,26 +422,37 @@
             </div>
           </div>
           <div class="footer-form">
-            <form>
+            <form id="contact-form">
               <div class="form-group">
                 <input type="text" id="name" placeholder="Name" required />
+                <p class="error-message" id="name-error"></p>
               </div>
               <div class="form-group two-col">
-                <input type="email" id="email" placeholder="Email" required />
-                <input
-                  type="tel"
-                  id="phone"
-                  placeholder="Contact Number"
-                  required
-                />
+                <div>
+                  <input type="email" id="email" placeholder="Email" required />
+                  <p class="error-message" id="email-error"></p>
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Contact Number"
+                    required
+                  />
+                  <p class="error-message" id="phone-error"></p>
+                </div>
               </div>
               <div class="form-group form-grow">
-                <textarea
-                  id="message"
-                  placeholder="Message"
-                  rows="3"
-                  required
-                ></textarea>
+                <div class="textarea-container">
+                  <textarea
+                    id="message"
+                    placeholder="Message"
+                    rows="3"
+                    required
+                  ></textarea>
+                  <p class="error-message" id="message-error"></p>
+                </div>
+
                 <button type="submit">Send Message</button>
               </div>
             </form>
